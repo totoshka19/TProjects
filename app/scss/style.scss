@@ -1,0 +1,56 @@
+@import './fonts/fonts.scss';
+@import 'constants/reset';
+@import 'constants/global';
+@import './constants/vars.scss';
+@import './libs/swiper.scss';
+@import './components/modal.scss';
+
+.header {
+    background-color: $default;
+    border-bottom: 2px solid $line;
+    &__inner {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        padding: 8px 0;
+    }
+    &__nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        color: $white;
+        padding-bottom: 20px;
+    }
+    &__nav-link {
+        transition: all 0.3s ease;
+    }
+    &__nav-link.active {
+        position: relative;
+        &:after {
+            position: absolute;
+            content: '';
+            bottom: -20px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $primary;
+        }
+    }
+    &__nav-link:hover {
+        position: relative;
+        color: $primary;
+        &:hover:after {
+            position: absolute;
+            content: '';
+            bottom: -20px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: $primary;
+        }
+    }
+    &__btn-more .dot {
+        background-color: $white;
+    }
+}

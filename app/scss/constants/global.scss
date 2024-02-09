@@ -1,0 +1,54 @@
+@import './vars.scss';
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'GolosUI-Medium', sans-serif;
+}
+
+main {
+    flex-grow: 1;
+}
+
+.container {
+    max-width: 1920px;
+    width: 100%;
+    padding: 0 15px;
+}
+
+/*круглая синяя кнопка с плюсиком*/
+.btn-globe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    color: $white;
+    background-color: $primary;
+    cursor: pointer;
+    border: none;
+}
+
+/*кнопка три точки*/
+.btn-more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    padding: 18px 11px;
+    background-color: inherit;
+    cursor: pointer;
+    border: none;
+    & .dot {
+        border-radius: 50%;
+        width: 4px;
+        height: 4px;
+    }
+}
+
+
+
+
