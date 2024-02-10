@@ -1,14 +1,14 @@
 @import './fonts/fonts.scss';
-@import 'constants/reset';
-@import 'constants/global';
+@import './constants/reset';
+@import './constants/global';
 @import './constants/vars.scss';
-@import './libs/swiper.scss';
 @import './components/modal.scss';
+@import './libs/swiper.scss';
 
 .header {
     background-color: $default;
-    border-bottom: 2px solid $line;
-    &__inner {
+    border-bottom: 2px solid $text-color;
+    &__inner {position: relative;
         display: flex;
         align-items: center;
         gap: 30px;
@@ -22,7 +22,8 @@
         color: $white;
         padding-bottom: 20px;
     }
-    &__nav-link {
+    &__nav-link,
+    &__btn-more .dot {
         transition: all 0.3s ease;
     }
     &__nav-link.active {
@@ -52,5 +53,8 @@
     }
     &__btn-more .dot {
         background-color: $white;
+    }
+    &__btn-more:hover .dot {
+        background-color: $primary;
     }
 }
