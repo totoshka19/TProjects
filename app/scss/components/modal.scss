@@ -64,3 +64,45 @@
         background-image: url("../../images/icons/gear_blue.svg");
     }
 }
+
+//subheader при нажатии на "Работа с задачами"
+.subheader-tabs {
+    position: absolute;
+    z-index: 5;
+    top: 116px;
+    left: 0;
+    width: 100%;
+    background-color: $white;
+    border-bottom: 1px solid $line-color;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px 0 16px;
+    }
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__link {
+        color: $text-color;
+        font-size: 12px;
+        font-weight: 700;
+        padding: 11px;
+        text-transform: uppercase;
+        letter-spacing: .5px;
+        transition: all 0.3s ease;
+    }
+    &__link:hover {
+        color: $primary;
+    }
+    &__link-active {
+        color: $white !important;
+        background-color: $primary;
+        border-radius: 4px;
+    }
+    &__lock {
+        cursor: pointer;
+    }
+}

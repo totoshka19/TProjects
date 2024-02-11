@@ -1,1 +1,2 @@
-//= ../components/modal.js
+//= ../components/menu-settings.js
+//= ../components/subheader.js
