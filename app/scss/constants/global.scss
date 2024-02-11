@@ -34,6 +34,10 @@ main {
     background-color: $primary;
     cursor: pointer;
     border: none;
+    transition: all 0.3s ease;
+    &:hover {
+        background-color: $hover-btn;
+    }
 }
 
 /*кнопка три точки*/
@@ -47,11 +51,34 @@ main {
     cursor: pointer;
     border: none;
     & .dot {
+        background-color: $text-color;
         border-radius: 50%;
         width: 4px;
         height: 4px;
+        transition: all 0.3s ease;
+    }
+    &:hover .dot {
+        background-color: $primary;
     }
 }
+
+/*большая синяя кнопка*/
+.btn {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    padding: 12px;
+    color: $white;
+    background-color: $primary;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover {
+        background-color: $hover-btn;
+    }
+}
+
 
 
 

@@ -5,10 +5,12 @@
 @import './components/modal.scss';
 @import './libs/swiper.scss';
 
+//верхняя панель header
 .header {
     background-color: $default;
     border-bottom: 2px solid $text-color;
-    &__inner {position: relative;
+    &__inner {
+        position: relative;
         display: flex;
         align-items: center;
         gap: 30px;
@@ -22,8 +24,7 @@
         color: $white;
         padding-bottom: 20px;
     }
-    &__nav-link,
-    &__btn-more .dot {
+    &__nav-link {
         transition: all 0.3s ease;
     }
     &__nav-link.active {
@@ -54,7 +55,55 @@
     &__btn-more .dot {
         background-color: $white;
     }
-    &__btn-more:hover .dot {
-        background-color: $primary;
+}
+
+//нижняя панель header
+.subheader {
+    border-bottom: 1px solid $line-color;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 0;
+    }
+    &__content {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 700;
+        color: $default;
+    }
+    &__content-item:not(:first-child) {
+        padding-left: 16px;
+    }
+    &__content-item:not(:last-child) {
+        padding-right: 16px;
+        border-right: 1px solid $line-color;
+    }
+    &__content-item span {
+        color: $primary;
+        padding-right: 8px;
+    }
+    &__content-item.title {
+        letter-spacing: .5px;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    &__content-item.title:hover {
+        color: $primary;
+    }
+    .weather {
+        display: flex;
+    }
+    .weather img {
+        padding-right: 8px;
+    }
+    &__btn-question {
+        padding: 8px;
+        cursor: pointer;
+    }
+    &__btn-add {
+        margin-left: 8px;
     }
 }

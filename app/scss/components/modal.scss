@@ -1,3 +1,4 @@
+//стиль линии в выпадающих меню
 .line {
     width: 100%;
     height: 2px;
@@ -5,6 +6,7 @@
     background-color: $line-color;
 }
 
+//контекстное меню при нажатии на три точки в header
 .header__context-menu {
     position: absolute;
     top: 55px;
