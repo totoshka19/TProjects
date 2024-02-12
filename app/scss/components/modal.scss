@@ -9,6 +9,7 @@
 //контекстное меню при нажатии на три точки в header
 .header__context-menu {
     position: absolute;
+    z-index: 10;
     top: 55px;
     left: 600px;
     width: 200px;
