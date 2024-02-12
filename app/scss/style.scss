@@ -108,3 +108,50 @@
         margin-left: 8px;
     }
 }
+
+//рабочий стол
+.desktop {
+    background-color: $desktop-bgc;
+    padding: 16px 0;
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+    &__block {
+        max-width: 600px;
+        max-height: 520px;
+        background-color: $white;
+        border: 1px solid $line-color;
+        border-top: 3px solid;
+        border-radius: 8px;
+    }
+    &__block-top {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid $line-color;
+        padding: 14px 0 14px 16px;
+    }
+    .top__text-title {
+        font-size: 16px;
+        font-weight: 500;
+        color: $text-color;
+        margin-bottom: 10px;
+    }
+    .top__text-content {
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .task-distribution {
+        border-top-color: $primary;
+    }
+    .deal-funnel {
+        border-top-color: $coral;
+    }
+    .contacts {
+        border-top-color: $orange;
+    }
+
+}

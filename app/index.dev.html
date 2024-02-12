@@ -11,10 +11,41 @@
 </head>
 <body>
     <!--=include header.html -->
-    <main>
-    
+    <main class="desktop">
+	    <div class="container">
+		    <div class="desktop__inner">
+			    <div class="desktop__block task-distribution">
+				    <div class="desktop__block-top">
+					    <div class="top__text">
+						    <h2 class="top__text-title">Распределение задач</h2>
+						    <div class="top__text-content">
+							    <a class="top__text-link" href="#">Задачи</a>
+							    <a class="top__text-link" href="#">Неделя</a>
+							    <a class="top__text-link" href="#">08.01.22 - 15.01.22</a>
+						    </div>
+					    </div>
+					    <button class="head__more btn-more" type="button">
+						    <span class="dot"></span>
+						    <span class="dot"></span>
+						    <span class="dot"></span>
+					    </button>
+				    </div>
+				    <div class="desktop__block-center">
+					    <canvas id="myChart"></canvas>
+				    </div>
+			    </div>
+			    <div class="desktop__block deal-funnel">
+				    2
+			    </div>
+			    <div class="desktop__block contacts">
+				    3
+			    </div>
+		    </div>
+	    </div>
     </main>
     <!--=include footer.html -->
-    <script src="./js/main.min.js"></script>
+	
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="./js/main.min.js"></script>
 </body>
 </html>
